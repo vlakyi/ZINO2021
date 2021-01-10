@@ -63,12 +63,6 @@
             <code>git config --global color.ui true</code> -
         </li>
         <li>
-            <code>git commit "filename"</code> -
-        </li>
-        <li>
-            <code>git branch -v</code> -
-        </li>
-        <li>
             <code>git config --global color.ui true</code> - Komenda jest przełącznikiem pozwalającym konfigurować koloryzowanie danych wyjścia. Dostępne są trzy opcje: 
                 <ul>
                     <li><code>true</code> - włącza koloryzowanie danych wyjściowych</li>
@@ -95,9 +89,6 @@
             Git w tym momencie dzieli ilość commitów na pół i przechodzi do "środkowego". Sprawdzamy czy błąd występuje, jeśli nie ponownie używamy komendy <code>git bisect good</code>, a git sprawdza drugą połowę commitów, w przeciwnym wypadku używamy komendy <code>git bisect bad</code>, wtedy Git będzie sprawdzał pierwszą połowę commitów.<br>
             Proces ten powtarza się aż do momentu, w którym znajdziemy commit psujący nasz kod.
             Gdy znajdziemy wadliwy commit używamy komendy <code>git bisect reset</code> aby zakończyć proces przeglądania commitów.<br><br>
-        </li>
-        <li>
-            <code>git commit -a -m ""</code> - kommitowanie każdego zmienonego plika, dzięki czemu można pominąć git add
         </li>
         <li>
             <code>git add .</code> - dodanie wszystkich plików w katalogu i podkatalogach do indeksu gita (staging area). Dodaje do niego aktualną ich postać, nadpisując ich poprzednią postać, jeżeli taka znajdowała się w indeksie. Działa to również dla usuniętych plików. Sama komenda nie zapisuje nic do grafu historii. Zmiany dodane do staging area można później scommitować("zapisać").
